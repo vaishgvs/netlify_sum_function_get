@@ -3,7 +3,7 @@ exports.handler = async (event, context) => {
     const num2 = event.queryStringParameters.num2;
     
     const sum = parseInt(num1) + parseInt(num2);
-    const sum2 = JSON.stringify(sum);
+    var sum2 = JSON.stringify(sum);
     return {
       statusCode: 200,
       body: `Sum is: ` + sum2 ,
